@@ -5,41 +5,41 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.image-block {
+.block {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.image-block .image {
+.block__image {
   width: 100%;
 }
 
-.image-block .details {
+.block__details {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .image-block {
+  .block {
     text-align: center;
   }
 
 }
 
-.centered-element {
+.centered{
   display: block;
   width: 400px;
   margin: 0 auto 0;
 }
 
-.task {
+.centered__elem_task {
   width: 56%;
   display: inline-block;
 }
 
-.list {
+.centered__list {
   margin: 0;
   padding: 0px;
 }
@@ -70,7 +70,7 @@ button:hover {
 }
 /* Heading */
 
-.new-task {
+.centered__task {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -80,7 +80,7 @@ button:hover {
   text-transform: uppercase;
 }
 
-.text {
+.centered__text{
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -93,13 +93,13 @@ button:hover {
   color: #888;
 }
 
-.text:focus {
+.centered__text:focus {
   color: #333;
 }
 
 /* New Task */
 
-.add-item {
+.centered__item {
   display: block;
   margin: 0 0 20px;
 }
@@ -108,7 +108,7 @@ button:hover {
   width: 318px;
 }
 
-.add-btn:hover {
+.centered__btn:hover {
   color: #0FC57C;
 }
 
@@ -120,36 +120,36 @@ li {
   border-bottom: 1px solid #eee;
 }
 
-.list-elem {
+.centered__elem {
   vertical-align: middle;
 }
 
-.checkbox {
+.centered__checkbox {
   margin: 0 10px;
 }
 
-.task {
+.centered__elem_task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.text-list {
+.centered__elem_list {
   width: 226px;
 }
 
-.delete:hover {
+.centered__delete:hover {
   color: #CF2323;
 }
 
-.delete img {
+.centered__delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete img:hover {
+.centered__delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -165,11 +165,11 @@ ul li input[type="text"] {
   display: none;
 }
 
-.text-list {
+.centered__elem_list {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode.task {
+.centered__mode.centered__elem_task {
   display: none;
 }

@@ -9,44 +9,44 @@
   </head>
   
   <body>
-    <section class="image-block">
-      <img alt="eisenhower-matrix" class="image" src="./eisenhower-matrix.jpg">
-      <a class="details" 
+    <section class="block">
+      <img alt="eisenhower-matrix" class="block__image" src="./eisenhower-matrix.jpg">
+      <a class="block__details" 
             href="https://goal-life.com/page/method/matrix-eisenhower">
             Want more details?
       </a>
     </section>
-    <section class="centered-element">
-      <p id="add-element"><label class="new-task add-item" for="new-task">Add Item</label>
-        <input id="new-task" type="text" class="text">
-        <button class="add-btn">Add</button>
+    <section class="centered">
+      <p id="add-element"><label class="centered__task centered__item" for="new-task">Add Item</label>
+        <input id="new-task" type="text" class="centered__text">
+        <button class="centered__btn">Add</button>
       </p>
-      <h1 class="new-task">
+      <h1 class="centered__task">
         Todo
       </h1>
-      <ul class="list" id="incomplete-tasks">
-        <li class="list-elem">
-          <input class="checkbox" type="checkbox"><label class="task">Pay Bills</label>
-          <input type="text" class="text task text-list">
-          <button class="edit">Edit</button>
-          <button class="delete"><img alt="button-remove" src="./remove.svg" ></button>
+      <ul class="centered__list" id="incomplete-tasks">
+        <li class="centered__elem">
+          <input class="centered__checkbox" type="checkbox"><label class="centered__elem_task">Pay Bills</label>
+          <input type="text" class="centered__text centered__elem_task centered__elem_list">
+          <button class="centered__edit">Edit</button>
+          <button class="centered__delete"><img alt="button-remove" src="./remove.svg" ></button>
         </li>
-        <li class="list-elem edit-mode">
-          <input class="list-input" type="checkbox"><label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="text task text-list">
-          <button class="edit">Save</button>
-          <button class="delete"><img alt="button-remove" src="./remove.svg" ></button>
+        <li class="centered__elem centered__mode">
+          <input class="centered__checkbox" type="checkbox"><label class="centered__elem_task">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="centered__text centered__elem_task centered__elem_list">
+          <button class="centered__edit">Save</button>
+          <button class="centered__delete"><img alt="button-remove" src="./remove.svg" ></button>
         </li>
       </ul>
-      <h3 class="new-task">
+      <h3 class="centered__task">
         Completed
       </h3>
-      <ul class="list" id="completed">
-        <li class="list-elem">
-          <input class="checkbox" type="checkbox" checked><label class="task elem-completed">See the Doctor</label>
-          <input type="text" class="text task text-list ">
-          <button class="edit">Edit</button>
-          <button class="delete"><img alt="button-remove" src="./remove.svg"></button>
+      <ul class="centered__list" id="completed">
+        <li class="centered__elem">
+          <input class="centered__checkbox" type="checkbox" checked><label class="centered__elem_task elem-completed">See the Doctor</label>
+          <input type="text" class="centered__text centered__elem_task centered__elem_list">
+          <button class="centered__edit">Edit</button>
+          <button class="centered__delete"><img alt="button-remove" src="./remove.svg"></button>
         </li>
       </ul>
     </section>
