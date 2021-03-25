@@ -30,13 +30,14 @@ body {
 
 .centered{
   display: block;
-  width: 400px;
+  width: 500px;
   margin: 0 auto 0;
 }
 
 .centered__elem_task {
   width: 56%;
   display: inline-block;
+  flex-grow: 1;
 }
 
 .centered__list {
@@ -80,6 +81,10 @@ button:hover {
   text-transform: uppercase;
 }
 
+.centered__wrapper {
+  display: flex;
+}
+
 .centered__text{
   margin: 0;
   font-size: 18px;
@@ -118,6 +123,10 @@ li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .centered__elem {
