@@ -41,7 +41,9 @@ var createNewTaskElement=function(taskString){
   
   editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
   editButton.className="centered__edit";
-  
+  editInput.className="centered__text";
+  editInput.value=taskString;
+
   //deleteButton.innerText="Delete";
   deleteButton.className="centered__delete";
   deleteButtonImg.src='./remove.svg';
@@ -80,21 +82,25 @@ var editTask=function(){
   
   
   var listItem=this.parentNode;
-  
   var editInput=listItem.querySelector('input[type=text]');
   var label=listItem.querySelector("label");
   var editBtn=listItem.querySelector(".centered__edit");
   var containsClass=listItem.classList.contains("centered__mode");
+
   //If class of the parent is .editmode
 
   if(containsClass){
     //switch to .editmode
     //label becomes the inputs value.
+    label.className="centered__elem_task"
     label.innerText=editInput.value;
     editBtn.innerText="Edit";
+    
   } else {
+    label.className="none";
     editInput.value=label.innerText;
     editBtn.innerText="Save";
+    
   }
   //toggle .editmode on the parent.
   listItem.classList.toggle("centered__mode");

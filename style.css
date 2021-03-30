@@ -98,6 +98,11 @@ button:hover {
   color: #888;
 }
 
+.centered__mode .centered__text {
+  display:inline-block;
+  width:224px
+}
+
 .centered__text:focus {
   color: #333;
 }
@@ -144,9 +149,9 @@ li {
   width: 226px;
 }
 
-.centered__elem_list {
+/* .centered__elem_list {
   width: 226px;
-}
+} */
 
 .centered__delete:hover {
   color: #CF2323;
@@ -179,6 +184,12 @@ ul li input[type="text"] {
   width: 224px;
 }
 
-.centered__mode.centered__elem_task {
+ .centered__mode.centered__elem_none {
   display: none;
 }
+
+.none {
+  display: none;
+}
+
+/* centered__elem_task */
