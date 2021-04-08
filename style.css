@@ -86,7 +86,7 @@ button:hover {
 }
 
 .centered__text{
-  margin: 0;
+  /* margin: 0; */
   font-size: 18px;
   line-height: 18px;
   height: 21px;
@@ -100,7 +100,7 @@ button:hover {
 
 .centered__mode .centered__text {
   display:inline-block;
-  width:224px
+  width:327px
 }
 
 .centered__text:focus {
